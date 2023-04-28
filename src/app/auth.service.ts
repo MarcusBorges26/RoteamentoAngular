@@ -15,7 +15,7 @@ export class AuthService {
 
   login(email: string, senha: string): boolean{
     if(email === "marcusborges@gmail.com" && senha === "mMm180306"){
-      sessionStorage.getItem("access-token", this.accessToken)
+      sessionStorage.setItem("access-token", this.accessToken)
       return true
     }
     return false
